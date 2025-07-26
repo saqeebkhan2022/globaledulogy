@@ -13,7 +13,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex items-center min-h-screen bg-gradient-to-br from-[#fff7f3] via-[#fef0ec] to-[#ffece6] overflow-hidden  mt-[-60px]">
+    <section className="relative flex items-center min-h-screen bg-gradient-to-br from-[#fff7f3] via-[#fef0ec] to-[#ffece6] overflow-hidden  mt-[-100px]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 z-0 bg-[url('/grid.svg')] bg-repeat"></div>
 
