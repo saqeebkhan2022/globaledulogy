@@ -66,7 +66,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
-                  href="#"
+                  href="about"
                   className="hover:text-[#EA4E14] transition-colors"
                 >
                   About Us
@@ -191,7 +191,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-[#EA4E14]" />
-                <p>info@careertech.edu</p>
+                <p>info@globaledulogy.com</p>
               </div>
             </div>
           </div>

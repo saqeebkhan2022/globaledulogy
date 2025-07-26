@@ -24,7 +24,7 @@ export default function ImpactSection() {
     {
       icon: "🌍",
       number: "20+",
-      title: "Countries",
+      title: "Study Destinations",
       description: "Global education opportunities",
       color: "bg-purple-50",
     },
@@ -38,8 +38,8 @@ export default function ImpactSection() {
     {
       icon: "🏢",
       number: "10+",
-      title: "Office Locations",
-      description: "Convenient access across regions",
+      title: "Years of Experience",
+      description: "Trusted by students & parents since 2013",
       color: "bg-pink-50",
     },
   ];

@@ -2,6 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { ChevronDown, ChevronRight, X, Menu } from "lucide-react";
+import Link from "next/link";
+import { FaStethoscope } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -10,9 +14,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -36,80 +38,186 @@ export default function Navbar() {
 
   const medicalDropdownItems = [
     {
-      title: "NEET UG",
+      title: "UNDERGRADUATE",
       icon: "🎓",
-      children: ["MBBS", "BDS", "BAMS", "BHMS", "BUMS", "Veterinary"],
-    },
-    {
-      title: "NEET PG",
-      icon: "🎓",
-      children: ["MD", "MS", "MDS", "Diploma"],
-    },
-    {
-      title: "NURSING",
-      icon: "👩‍⚕️",
-      children: ["B.Sc Nursing", "GNM", "ANM", "M.Sc Nursing"],
-    },
-    {
-      title: "PHARMACY",
-      icon: "💊",
-      children: ["B.Pharm", "D.Pharm", "M.Pharm", "Pharm.D"],
-    },
-    {
-      title: "ALLIED HEALTH",
-      icon: "🏥",
       children: [
-        "Physiotherapy",
-        "Occupational Therapy",
-        "Medical Lab Technology",
-        "Radiology",
+        { icon: <FaStethoscope />, label: "MBBS", href: "/medical/ug/mbbs" },
+        { icon: <FaStethoscope />, label: "BDS", href: "/medical/ug/bds" },
+        { icon: <FaStethoscope />, label: "BAMS", href: "/medical/ug/bams" },
+        { icon: <FaStethoscope />, label: "BHMS", href: "/medical/ug/bhms" },
+        { icon: <FaStethoscope />, label: "BUMS", href: "/medical/ug/bums" },
+        {
+          icon: <FaStethoscope />,
+          label: "Veterinary",
+          href: "/medical/ug/veterinary",
+        },
       ],
     },
+    {
+      title: "POSTGRADUATE",
+      icon: "🎓",
+      children: [
+        { icon: <FaStethoscope />, label: "MD", href: "/medical/pg/md" },
+        { icon: <FaStethoscope />, label: "MS", href: "/medical/pg/ms" },
+        { icon: <FaStethoscope />, label: "MDS", href: "/medical/pg/mds" },
+        {
+          icon: <FaStethoscope />,
+          label: "Diploma",
+          href: "/medical/pg/diploma",
+        },
+      ],
+    },
+    // {
+    //   title: "NURSING",
+    //   icon: "👩‍⚕️",
+    //   children: [
+    //     { label: "B.Sc Nursing", href: "/courses/medical/nursing/bsc" },
+    //     { label: "GNM", href: "/courses/medical/nursing/gnm" },
+    //     { label: "ANM", href: "/courses/medical/nursing/anm" },
+    //     { label: "M.Sc Nursing", href: "/courses/medical/nursing/msc" },
+    //   ],
+    // },
+    // {
+    //   title: "PHARMACY",
+    //   icon: "💊",
+    //   children: [
+    //     { label: "B.Pharm", href: "/courses/medical/pharmacy/bpharm" },
+    //     { label: "D.Pharm", href: "/courses/medical/pharmacy/dpharm" },
+    //     { label: "M.Pharm", href: "/courses/medical/pharmacy/mpharm" },
+    //     { label: "Pharm.D", href: "/courses/medical/pharmacy/pharmd" },
+    //   ],
+    // },
+    // {
+    //   title: "ALLIED HEALTH",
+    //   icon: "🏥",
+    //   children: [
+    //     {
+    //       label: "Physiotherapy",
+    //       href: "/courses/medical/allied-health/physiotherapy",
+    //     },
+    //     {
+    //       label: "Occupational Therapy",
+    //       href: "/courses/medical/allied-health/occupational-therapy",
+    //     },
+    //     {
+    //       label: "Medical Lab Technology",
+    //       href: "/courses/medical/allied-health/mlt",
+    //     },
+    //     {
+    //       label: "Radiology",
+    //       href: "/courses/medical/allied-health/radiology",
+    //     },
+    //   ],
+    // },
   ];
 
   const engineeringDropdownItems = [
     {
       title: "B.Tech",
-      icon: "⚙️",
+      icon: <FaTools />,
       children: [
-        "Computer Science",
-        "Mechanical",
-        "Electrical",
-        "Civil",
-        "Electronics",
-        "Chemical",
+        {
+          icon: <FaTools />,
+          label: "Computer Science",
+          href: "/courses/engineering/btech/cse",
+        },
+        {
+          icon: <FaTools />,
+          label: "Mechanical",
+          href: "/courses/engineering/btech/me",
+        },
+        {
+          icon: <FaTools />,
+          label: "Electrical",
+          href: "/courses/engineering/btech/ee",
+        },
+        {
+          icon: <FaTools />,
+          label: "Civil",
+          href: "/courses/engineering/btech/ce",
+        },
+        {
+          icon: <FaTools />,
+          label: "Electronics",
+          href: "/courses/engineering/btech/ec",
+        },
+        {
+          icon: <FaTools />,
+          label: "Chemical",
+          href: "/courses/engineering/btech/che",
+        },
       ],
     },
     {
       title: "M.Tech",
-      icon: "🔧",
+      icon: <FaTools />,
       children: [
-        "Computer Science",
-        "Mechanical",
-        "Electrical",
-        "Civil",
-        "Electronics",
+        {
+          icon: <FaTools />,
+          label: "Computer Science",
+          href: "/courses/engineering/mtech/cse",
+        },
+        {
+          icon: <FaTools />,
+          label: "Mechanical",
+          href: "/courses/engineering/mtech/me",
+        },
+        {
+          icon: <FaTools />,
+          label: "Electrical",
+          href: "/courses/engineering/mtech/ee",
+        },
+        {
+          icon: <FaTools />,
+          label: "Civil",
+          href: "/courses/engineering/mtech/ce",
+        },
+        {
+          icon: <FaTools />,
+          label: "Electronics",
+          href: "/courses/engineering/mtech/ec",
+        },
       ],
     },
     {
       title: "Diploma",
-      icon: "📜",
+      icon: <FaTools />,
       children: [
-        "Mechanical",
-        "Electrical",
-        "Civil",
-        "Computer Science",
-        "Electronics",
+        {
+          icon: <FaTools />,
+          label: "Mechanical",
+          href: "/courses/engineering/diploma/me",
+        },
+        {
+          icon: <FaTools />,
+          label: "Electrical",
+          href: "/courses/engineering/diploma/ee",
+        },
+        {
+          icon: <FaTools />,
+          label: "Civil",
+          href: "/courses/engineering/diploma/ce",
+        },
+        {
+          icon: <FaTools />,
+          label: "Computer Science",
+          href: "/courses/engineering/diploma/cse",
+        },
+        {
+          icon: <FaTools />,
+          label: "Electronics",
+          href: "/courses/engineering/diploma/ec",
+        },
       ],
     },
   ];
 
-  const renderDropdown = (items, keyPrefix, hoverColor = "red") =>
+  const renderDropdown = (items, keyPrefix, colorClass) =>
     items.map((item, index) => (
       <div key={index} className="relative">
         <button
           onClick={() => toggleSubDropdown(`${keyPrefix}-${index}`)}
-          className={`w-full flex items-center justify-between px-4 py-3 text-sm text-gray-700 hover:bg-${hoverColor}-50 hover:text-${hoverColor}-600`}
+          className="w-full flex items-center justify-between px-4 py-3 text-sm text-gray-700"
         >
           <div className="flex items-center space-x-3">
             <span>{item.icon}</span>
@@ -120,13 +228,15 @@ export default function Navbar() {
         {activeSubDropdown === `${keyPrefix}-${index}` && (
           <div className="absolute left-full top-0 ml-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 py-2">
             {item.children.map((child, i) => (
-              <a
+              <Link
                 key={i}
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                href={child.href}
+                className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                onClick={closeAllDropdowns}
               >
-                {child}
-              </a>
+                {child.icon}
+                {child.label}
+              </Link>
             ))}
           </div>
         )}
@@ -142,21 +252,20 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24">
-            {/* Logo */}
-            <div className="flex-shrink-0">
+            <Link href="/">
               <img src="/images/logo.png" alt="Logo" className="h-14" />
-            </div>
+            </Link>
 
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center space-x-8">
-              <a
+              <Link
                 href="/"
-                className="active text-black font-medium hover:text-red-600"
+                className="text-black font-medium hover:text-red-600"
               >
                 HOME
-              </a>
+              </Link>
 
-              {/* MEDICAL Dropdown */}
+              {/* MEDICAL */}
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown("medical")}
@@ -164,19 +273,23 @@ export default function Navbar() {
                 >
                   MEDICAL
                   <ChevronDown
-                    className={`mt-1 ml-1 h-4 w-4 transition-transform ${
+                    className={`ml-1 h-4 w-4 mt-1 transition-transform ${
                       activeDropdown === "medical" ? "rotate-180" : ""
                     }`}
                   />
                 </button>
                 {activeDropdown === "medical" && (
                   <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-50">
-                    {renderDropdown(medicalDropdownItems, "medical", "red")}
+                    {renderDropdown(
+                      medicalDropdownItems,
+                      "medical",
+                      "hover:text-red-600"
+                    )}
                   </div>
                 )}
               </div>
 
-              {/* ENGINEERING Dropdown */}
+              {/* ENGINEERING */}
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown("engineering")}
@@ -184,7 +297,7 @@ export default function Navbar() {
                 >
                   ENGINEERING
                   <ChevronDown
-                    className={`mt-1 ml-1 h-4 w-4 transition-transform ${
+                    className={`ml-1 h-4 w-4 mt-1 transition-transform ${
                       activeDropdown === "engineering" ? "rotate-180" : ""
                     }`}
                   />
@@ -194,31 +307,32 @@ export default function Navbar() {
                     {renderDropdown(
                       engineeringDropdownItems,
                       "engineering",
-                      "blue"
+                      "hover:text-blue-600"
                     )}
                   </div>
                 )}
               </div>
-              <a
+
+              <Link
                 href="/about"
-                className="block text-black font-medium hover:text-red-600"
+                className="text-black font-medium hover:text-red-600"
               >
                 ABOUT
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                href="/counselling"
                 className="bg-[#EA4E14] text-white px-6 py-2 rounded-md hover:bg-red-700 font-medium"
               >
                 Get Counselling
-              </a>
+              </Link>
             </div>
 
-            {/* Mobile Menu Toggle */}
+            {/* Mobile Toggle */}
             <div className="lg:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-black hover:text-red-600"
+                className="text-black"
               >
                 {mobileMenuOpen ? (
                   <X className="h-6 w-6" />
@@ -230,120 +344,84 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
+        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-white shadow-lg border-t">
             <div className="px-4 py-4 space-y-4">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="block text-black font-medium hover:text-red-600"
+                onClick={closeAllDropdowns}
               >
                 HOME
-              </a>
+              </Link>
 
-              {/* Mobile Medical */}
-              <div className="space-y-2">
-                <button
-                  onClick={() => toggleDropdown("medical")}
-                  className="flex w-full justify-between items-center text-black font-medium hover:text-red-600"
-                >
-                  MEDICAL
-                  <ChevronDown
-                    className={`h-4 w-4 transition-transform ${
-                      activeDropdown === "medical" ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {activeDropdown === "medical" &&
-                  medicalDropdownItems.map((item, idx) => (
-                    <div key={idx}>
-                      <button
-                        onClick={() =>
-                          toggleSubDropdown(`mobile-medical-${idx}`)
-                        }
-                        className="flex justify-between w-full pl-4 text-sm text-gray-700 hover:text-red-600"
-                      >
-                        {item.title}
-                        <ChevronRight className="h-3 w-3" />
-                      </button>
-                      {activeSubDropdown === `mobile-medical-${idx}` && (
-                        <div className="pl-6 space-y-1">
-                          {item.children.map((child, i) => (
-                            <a
-                              key={i}
-                              href="#"
-                              className="block text-sm text-gray-600 hover:text-red-600"
-                            >
-                              {child}
-                            </a>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-              </div>
+              {[
+                ["medical", medicalDropdownItems],
+                ["engineering", engineeringDropdownItems],
+              ].map(([type, items]) => (
+                <div key={type} className="space-y-2">
+                  <button
+                    onClick={() => toggleDropdown(type)}
+                    className="flex w-full justify-between items-center text-black font-medium"
+                  >
+                    {type.toUpperCase()}
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform ${
+                        activeDropdown === type ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {activeDropdown === type &&
+                    items.map((item, idx) => (
+                      <div key={idx}>
+                        <button
+                          onClick={() => toggleSubDropdown(`${type}-${idx}`)}
+                          className="flex justify-between w-full pl-4 text-sm text-gray-700"
+                        >
+                          {item.title}
+                          <ChevronRight className="h-3 w-3" />
+                        </button>
+                        {activeSubDropdown === `${type}-${idx}` && (
+                          <div className="pl-6 space-y-1">
+                            {item.children.map((child, i) => (
+                              <Link
+                                key={i}
+                                href={child.href}
+                                onClick={closeAllDropdowns}
+                                className="block text-sm text-gray-600 hover:text-red-600"
+                              >
+                                {child.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                </div>
+              ))}
 
-              {/* Mobile Engineering */}
-              <div className="space-y-2">
-                <button
-                  onClick={() => toggleDropdown("engineering")}
-                  className="flex w-full justify-between items-center text-black font-medium hover:text-blue-600"
-                >
-                  ENGINEERING
-                  <ChevronDown
-                    className={`h-4 w-4 transition-transform ${
-                      activeDropdown === "engineering" ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {activeDropdown === "engineering" &&
-                  engineeringDropdownItems.map((item, idx) => (
-                    <div key={idx}>
-                      <button
-                        onClick={() => toggleSubDropdown(`mobile-engg-${idx}`)}
-                        className="flex justify-between w-full pl-4 text-sm text-gray-700 hover:text-blue-600"
-                      >
-                        {item.title}
-                        <ChevronRight className="h-3 w-3" />
-                      </button>
-                      {activeSubDropdown === `mobile-engg-${idx}` && (
-                        <div className="pl-6 space-y-1">
-                          {item.children.map((child, i) => (
-                            <a
-                              key={i}
-                              href="#"
-                              className="block text-sm text-gray-600 hover:text-blue-600"
-                            >
-                              {child}
-                            </a>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-              </div>
-              <a
-                href="#"
+              <Link
+                href="/about"
                 className="block text-black font-medium hover:text-red-600"
+                onClick={closeAllDropdowns}
               >
                 ABOUT
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                href="/counselling"
                 className="block w-full text-center bg-[#EA4E14] text-white px-4 py-2 rounded-md hover:bg-red-700"
+                onClick={closeAllDropdowns}
               >
                 Get Counselling
-              </a>
+              </Link>
             </div>
           </div>
         )}
       </nav>
 
-      {/* Spacer */}
-      <div className="h-28"></div>
-
-      {/* Backdrop Click Closer */}
+      <div className="h-28" />
       {(activeDropdown || activeSubDropdown) && (
         <div className="fixed inset-0 z-10" onClick={closeAllDropdowns} />
       )}
