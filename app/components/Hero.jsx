@@ -31,7 +31,7 @@ export default function Hero() {
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Shape Your
                 <br />
-                <span className="text-red-600">Future Today</span>
+                <span className="text-[#EA4E14]">Future Today</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                 Join thousands of graduates who advanced their careers with our
@@ -40,7 +40,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <button className="bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 font-semibold text-lg flex items-center group">
+            <button className="bg-[#EA4E14] text-white px-8 py-4 rounded-lg  font-semibold text-lg flex items-center group">
               Start Your Journey
               <svg
                 className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform"

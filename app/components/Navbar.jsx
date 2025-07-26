@@ -150,7 +150,7 @@ export default function Navbar() {
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center space-x-8">
               <a
-                href="#"
+                href="/"
                 className="active text-black font-medium hover:text-red-600"
               >
                 HOME
@@ -200,7 +200,7 @@ export default function Navbar() {
                 )}
               </div>
               <a
-                href="#"
+                href="/about"
                 className="block text-black font-medium hover:text-red-600"
               >
                 ABOUT
