@@ -1,4 +1,4 @@
-import Header from "../medical/utils/Header";
+import Header from "../Medical/utils/Header";
 
 export default function page() {
   return (
