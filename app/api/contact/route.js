@@ -15,36 +15,52 @@ export async function POST(req) {
     });
 
     await transporter.sendMail({
-      from: `"Counselling Form" <${process.env.EMAIL_USER}>`, // your Gmail
-      to: process.env.EMAIL_USER, // your email
+      from: `"Counselling Form" <${process.env.EMAIL_USER}>`,
+      to: "quadriabsaar@gmail.com",
       subject: "New Counselling Form Submission",
       html: `
-  <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-    <h2 style="color:#003366; text-align:center;">📌 New Counselling Registration</h2>
-    <p>Dear Admin,</p>
-    <p>A new counselling registration has been submitted. Please find the details below:</p>
+  <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background:#f9f9f9; padding:30px;">
+  <div style="max-width:600px; margin:0 auto; background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); padding:20px;">
+    
+    <h2 style="color:#003366; text-align:center; margin-bottom:10px;">
+      📌 New Counselling Registration
+    </h2>
+    <p style="text-align:center; color:#666; font-size:14px; margin-bottom:20px;">
+      A new counselling registration has been submitted. Please find the details below:
+    </p>
 
-    <table style="border-collapse: collapse; width: 100%; max-width: 500px; margin: 20px auto; font-size: 14px;">
+    <table style="border-collapse: collapse; width: 100%; font-size: 14px;">
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Course</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">${course}</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold; background:#f1f5f9; width:35%;">Course</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">${course}</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Name</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">${name}</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold; background:#f1f5f9;">Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">${name}</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Email</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">${email}</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold; background:#f1f5f9;">Email</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color:#003366;">
+          <a href="mailto:${email}" style="color:#003366; text-decoration:none;">${email}</a>
+        </td>
       </tr>
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Phone</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">${phone}</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold; background:#f1f5f9;">Phone</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">${phone}</td>
       </tr>
     </table>
-    <p style="margin-top:20px;">Please review the submission and take the necessary action.</p>
-    <p style="color:#555;">Best Regards,<br><strong>Global Edulogy</strong></p>
+
+    <p style="margin-top:20px; font-size:14px; color:#555; text-align:center;">
+      Please review the submission and take the necessary action.
+    </p>
+
+    <p style="margin-top:20px; text-align:center; color:#333;">
+      Best Regards,<br>
+      <strong style="color:#003366;">Global Edulogy</strong>
+    </p>
   </div>
+</div>
+
 `,
     });
 

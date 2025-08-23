@@ -74,13 +74,11 @@ export default function PaidCounselling() {
   };
 
   const generateUpiLink = (plan) =>
-    `upi://pay?pa=khansaqeeb2@ybl&pn=Counselling&am=${plan.total}&cu=INR&tn=${plan.name} Counselling Fee`;
+    `upi://pay?pa=9560561900@ybl&pn=Counselling&am=${plan.total}&cu=INR&tn=${plan.name} Counselling Fee`;
 
   const handlePaymentConfirmation = async () => {
     if (!phone.trim() || !utr.trim()) {
-      toast.success(
-        "Please enter your phone number and UTR before submitting."
-      );
+      toast.error("Please enter your phone number and UTR before submitting.");
       return;
     }
     setPaid(true);
@@ -132,7 +130,7 @@ export default function PaidCounselling() {
                 className="text-xl font-bold text-center mb-4"
                 style={{ color: "#003366" }}
               >
-                Pay for {selectedPlan.name}
+                Paid for {selectedPlan.name}
               </h3>
 
               {!paid ? (
