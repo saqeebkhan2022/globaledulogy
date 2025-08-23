@@ -21,7 +21,7 @@ export default function Hero() {
           <div className="space-y-8 text-center lg:text-left">
             {/* Badge */}
             <div className="inline-flex items-center px-5 py-2 bg-white shadow-md text-[#EA4E14] rounded-full text-sm font-semibold tracking-wide">
-              ⭐ Ranked #1 Career College 2024
+              ⭐ Ranked #1 Career Counsellor 2025
             </div>
 
             {/* Main Heading */}
@@ -37,7 +37,7 @@ export default function Hero() {
             </p>
 
             {/* CTA Button */}
-            <div>
+            <div href="#contact">
               <button className="bg-[#EA4E14] hover:bg-[#d63f0f] text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-3 mx-auto lg:mx-0 transition-all shadow-lg">
                 Start Your Journey
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />

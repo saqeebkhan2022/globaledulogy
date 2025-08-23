@@ -10,8 +10,8 @@ const CallFloat = () => {
       position: "fixed",
       right: "20px",
       bottom: "90px", // placed above WhatsApp button
-      width: "60px",
-      height: "60px",
+      width: "50px",
+      height: "50px",
       backgroundColor: "#34B7F1", // Blue color for call
       borderRadius: "50%",
       boxShadow: "2px 2px 5px rgba(0,0,0,0.3)",
@@ -23,8 +23,9 @@ const CallFloat = () => {
       transition: "transform 0.3s",
     },
     image: {
-      width: "30px",
-      height: "30px",
+      width: "50px",
+      height: "50px",
+      backgroundColor: "transparent",
     },
   };
 

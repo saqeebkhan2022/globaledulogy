@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import CTASection from "./components/cta-section";
 import CallFloat from "./components/CallFloat";
+ import { ToastContainer } from 'react-toastify';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <CallFloat />
         <CTASection />
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );

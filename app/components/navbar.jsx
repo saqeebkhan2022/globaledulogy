@@ -610,28 +610,40 @@ export default function Navbar() {
                         <div className="absolute left-full top-0 ml-1 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
                           <div className="py-1">
                             <a
-                              href="/Medical/pg/md"
+                              href="/Medical/PG/Dmmch"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
                             >
-                              MD
+                              DM/MCH
                             </a>
                             <a
-                              href="/Medical/pg/ms"
+                              href="/Medical/PG/Mdms"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
                             >
-                              MS
+                              MD/MS
                             </a>
                             <a
-                              href="/Medical/pg/mds"
+                              href="/Medical/PG/Dnb"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
+                            >
+                              DNB
+                            </a>
+                            <a
+                              href="/Medical/PG/NbeDiploma"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
+                            >
+                              NBE DIPLOMA
+                            </a>
+                            <a
+                              href="/Medical/PG/Mds"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
                             >
                               MDS
                             </a>
                             <a
-                              href="/Medical/pg/diploma"
+                              href="/Medical/PG/AyushPg"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
                             >
-                              Diploma
+                              AYUSH PG
                             </a>
                           </div>
                         </div>
@@ -663,28 +675,40 @@ export default function Navbar() {
                 <div className="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
                   <div className="py-1">
                     <a
-                      href="#"
+                      href="/Engineering/Josaa"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
                     >
-                      Computer Science
+                      JOSAA COUNSELLING
                     </a>
                     <a
-                      href="#"
+                      href="/Engineering/Csab"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
                     >
-                      Mechanical
+                      CSAB
                     </a>
                     <a
-                      href="#"
+                      href="/Engineering/Dasa"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
                     >
-                      Electrical
+                      DASA
                     </a>
                     <a
-                      href="#"
+                      href="/Engineering/JacDelhi"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
                     >
-                      Civil
+                      JAC DELHI
+                    </a>
+                    <a
+                      href="/Engineering/JacChandigarh"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
+                    >
+                      JAC CHANDIGARH
+                    </a>
+                    <a
+                      href="/Engineering/Wbjee"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
+                    >
+                      WBJEE
                     </a>
                   </div>
                 </div>
@@ -692,7 +716,7 @@ export default function Navbar() {
             </div>
 
             <a
-              href="/study-abroad"
+              href="/Mbbs-Abroad"
               className={`px-3 py-2 text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? "text-gray-900 hover:text-[#EA4E14]"
@@ -827,28 +851,40 @@ export default function Navbar() {
                     {pgOpen && (
                       <div className="pl-4">
                         <a
-                          href="/Medical/pg/md"
+                          href="/Medical/PG/Dmmch"
                           className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
                         >
-                          MD
+                          DM/MCH
                         </a>
                         <a
-                          href="/Medical/pg/ms"
+                          href="/Medical/PG/Mdms"
                           className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
                         >
-                          MS
+                          MD/MS
                         </a>
                         <a
-                          href="/Medical/pg/mds"
+                          href="/Medical/PG/Dnb"
+                          className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
+                        >
+                          DNB
+                        </a>
+                        <a
+                          href="/Medical/PG/NbeDiploma"
+                          className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
+                        >
+                          NBE DIPLOMA
+                        </a>
+                        <a
+                          href="/Medical/PG/Mds"
                           className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
                         >
                           MDS
                         </a>
                         <a
-                          href="/Medical/pg/diploma"
+                          href="/Medical/PG/AyushPg"
                           className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
                         >
-                          Diploma
+                          AYUSH PG
                         </a>
                       </div>
                     )}
@@ -872,38 +908,50 @@ export default function Navbar() {
                 {engineeringOpen && (
                   <div className="pl-6">
                     <a
-                      href="#"
+                      href="/Engineering/Josaa"
                       className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
                     >
-                      Computer Science
+                      JOSSA COUNSELING
                     </a>
                     <a
-                      href="#"
+                      href="/Engineering/Csab"
                       className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
                     >
-                      Mechanical
+                      CSAB
                     </a>
                     <a
-                      href="#"
+                      href="/Engineering/Dasa"
                       className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
                     >
-                      Electrical
+                      DASA
                     </a>
                     <a
-                      href="#"
+                      href="/Engineering/JacDelhi"
                       className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
                     >
-                      Civil
+                      JAC DELHI
+                    </a>
+                    <a
+                      href="/Engineering/JacChandigarh"
+                      className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
+                    >
+                      JAC CHANDIGARH
+                    </a>
+                    <a
+                      href="/Engineering/Wbjee"
+                      className="block py-2 text-sm text-gray-600 hover:text-[#EA4E14]"
+                    >
+                      WBJEE
                     </a>
                   </div>
                 )}
               </div>
 
               <a
-                href="/study-abroad"
+                href="/Mbbs-Abroad"
                 className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-[#EA4E14]"
               >
-                Study Abroad
+                MBBS Abroad
               </a>
               <a
                 href="/about"

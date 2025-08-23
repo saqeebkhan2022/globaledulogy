@@ -107,9 +107,9 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 text-[#EA4E14] mt-1 mr-2 flex-shrink-0" />
                 <span className="text-gray-300">
-                  123 Education Street
+                  Bangalore-04,
                   <br />
-                  Learning City, LC 12345
+                  Karnataka 560004
                 </span>
               </div>
               <div className="flex items-center">

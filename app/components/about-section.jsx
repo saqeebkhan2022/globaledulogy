@@ -39,7 +39,7 @@ export default function AboutSection() {
             Global Edulogy Services Pvt. Ltd. (Global Edulogy) is a leading
             educational consultancy firm dedicated to providing expert guidance
             and counselling for undergraduate (UG) and postgraduate (PG)
-            students. Founded in July 2018, Global Edulogy has successfully
+            students. Founded in July 2010, Global Edulogy has successfully
             counselled and guided over 10,000 students, helping them select the
             right career paths and realize their academic and professional
             dreams.

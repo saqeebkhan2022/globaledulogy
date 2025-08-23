@@ -1,0 +1,66 @@
+[
+  {
+    "id": "dental",
+    "name": "Dental",
+    "price": 1,
+    "gst": 0,
+    "total": 1,
+    "blurb": "Comprehensive counselling for Dental aspirants."
+  },
+  {
+    "id": "ayush",
+    "name": "Ayush",
+    "price": 20000,
+    "gst": 3600,
+    "total": 23600,
+    "blurb": "Expert guidance for Ayush admissions."
+  },
+  {
+    "id": "veterinary",
+    "name": "Veterinary",
+    "price": 40000,
+    "gst": 7200,
+    "total": 47200,
+    "blurb": "Personalized counselling for Veterinary students."
+  },
+  {
+    "id": "nursing",
+    "name": "Nursing",
+    "price": 10000,
+    "gst": 1800,
+    "total": 11800,
+    "blurb": "Affordable guidance for Nursing admissions."
+  },
+  {
+    "id": "medical",
+    "name": "Medical",
+    "price": 50000,
+    "gst": 9000,
+    "total": 59000,
+    "blurb": "Premium counselling for Medical aspirants."
+  },
+  {
+    "id": "engineering",
+    "name": "Engineering",
+    "price": 30000,
+    "gst": 5400,
+    "total": 35400,
+    "blurb": "Professional guidance for Engineering admissions."
+  },
+  {
+    "id": "pharmacy",
+    "name": "Pharmacy",
+    "price": 15000,
+    "gst": 2700,
+    "total": 17700,
+    "blurb": "Counselling services for Pharmacy students."
+  },
+  {
+    "id": "law",
+    "name": "Law",
+    "price": 25000,
+    "gst": 4500,
+    "total": 29500,
+    "blurb": "Expert support for Law counselling process."
+  }
+]
