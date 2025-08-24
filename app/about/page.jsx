@@ -22,11 +22,15 @@ const AboutPage = () => {
         <section className="text-center">
           <h2 className="text-3xl font-bold mb-4 text-[#EA4E14]">Who We Are</h2>
           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            At <span className="font-semibold">Global Edulogy</span>, we are
-            passionate about guiding students to pursue their higher education
-            abroad. With years of experience, strong partnerships with leading
-            universities, and a student-first approach, we have become one of
-            the most trusted names in international education consultancy.
+            At{" "}
+            <span className="font-bold text-[#003366] text-lg">
+              Global Edulogy
+            </span>
+            , we are passionate about guiding students to pursue their higher
+            education in india and abroad. With years of experience, strong
+            partnerships with leading colleges and universities, and a
+            student-first approach, we have become one of the most trusted names
+            in national and international education consultancy.
           </p>
         </section>
 
@@ -36,8 +40,8 @@ const AboutPage = () => {
             <h3 className="text-2xl font-semibold mb-3">🎯 Our Mission</h3>
             <p className="text-gray-600 leading-relaxed">
               To provide transparent, reliable, and comprehensive guidance to
-              students aspiring to study abroad, ensuring they make informed
-              decisions that align with their career goals and personal
+              students aspiring to study in india and abroad, ensuring they make
+              informed decisions that align with their career goals and personal
               ambitions.
             </p>
           </div>
@@ -54,19 +58,19 @@ const AboutPage = () => {
         {/* Why Choose Us */}
         <section>
           <h2 className="text-3xl font-bold mb-8 text-center text-[#EA4E14]">
-            Why Choose EduGlobe?
+            Why Choose Global Edulogy?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: "🎓",
                 title: "Expert Guidance",
-                desc: "Our experienced counselors provide personalized advice for course and university selection.",
+                desc: "Our experienced counselors provide personalized advice for course, college, and university selection.",
               },
               {
                 icon: "🤝",
                 title: "Trusted Partners",
-                desc: "We work with top universities worldwide to offer students diverse and quality options.",
+                desc: "We work with top colleges and universities worldwide to offer students diverse and quality options.",
               },
               {
                 icon: "📑",

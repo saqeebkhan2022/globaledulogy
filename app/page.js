@@ -6,6 +6,7 @@ import Testimonials from "./components/testimonials";
 import WhyChooseUs from "./components/why-choose-us";
 import CounsellingSection from "./components/CounsellingSection";
 import PaidCounselling from "./components/PaidCounselling";
+import SocialFloat from "./components/SocialFloat";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutSection />
       <CounsellingSection />
       <Stats />
+      <SocialFloat />
       <WhyChooseUs />
       <PaidCounselling />
       <Testimonials />

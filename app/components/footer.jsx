@@ -1,6 +1,6 @@
 import {
   Facebook,
-  Twitter,
+  X,
   Instagram,
   Linkedin,
   Mail,
@@ -35,7 +35,7 @@ export default function Footer() {
               <Facebook className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
               <Instagram className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
               <Send className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />{" "}
-              <Twitter className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
+              <X className="h-6 w-6 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
               <Linkedin className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
               <Youtube className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
               {/* Telegram */}

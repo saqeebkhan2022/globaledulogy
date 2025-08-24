@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 
 export default function Stats() {
   const stats = [
-    { number: 10000, suffix: "+", label: "Counselling Done" },
-    { number: 5000, suffix: "+", label: "Successful Admission" },
+    { number: 15000, suffix: "+", label: "Counselling Done" },
+    { number: 15000, suffix: "+", label: "Successful Admission" },
     { number: 1200, suffix: "+", label: "Association" },
     { number: 25000, suffix: "+", label: "Students Community" },
   ];

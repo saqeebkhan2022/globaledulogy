@@ -12,7 +12,7 @@ export default function AboutSection() {
       icon: <Award className="h-8 w-8 text-[#EA4E14]" />,
       title: "Proven Track Record",
       description:
-        "Over 10,000 successful admissions with a 95% placement rate in top universities.",
+        "Over 15,000 successful admissions with a 95% placement rate in top universities.",
     },
     {
       icon: <Globe className="h-8 w-8 text-[#EA4E14]" />,
@@ -36,13 +36,17 @@ export default function AboutSection() {
             About <span className="text-[#EA4E14]">Global Edulogy</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Global Edulogy Services Pvt. Ltd. (Global Edulogy) is a leading
-            educational consultancy firm dedicated to providing expert guidance
-            and counselling for undergraduate (UG) and postgraduate (PG)
-            students. Founded in July 2010, Global Edulogy has successfully
-            counselled and guided over 10,000 students, helping them select the
-            right career paths and realize their academic and professional
-            dreams.
+            Global Edulogy Pvt. Ltd.
+            <span className="text-[#003366] font-bold ">
+              {" "}
+              (Global Edulogy)
+            </span>{" "}
+            is a leading educational consultancy firm dedicated to providing
+            expert guidance and counselling for undergraduate (UG) and
+            postgraduate (PG) students. Founded in July 2010, Global Edulogy has
+            successfully counselled and guided over 15,000+ students, helping
+            them select the right career paths and realize their academic and
+            professional dreams.
           </p>
         </div>
 
