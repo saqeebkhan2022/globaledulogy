@@ -31,7 +31,8 @@ const SocialFloat = () => {
   return (
     <>
       {/* Desktop: Vertical Right Bar */}
-      <div className="hidden sm:flex fixed top-1/2 right-[-1] flex-col gap-3 z-50 transform -translate-y-1/2">
+      {/* Desktop: Vertical Left Bar */}
+      <div className="hidden sm:flex fixed top-1/2 left-2 flex-col gap-3 z-50 transform -translate-y-1/2">
         {socialLinks.map((social, index) => (
           <a
             key={index}
