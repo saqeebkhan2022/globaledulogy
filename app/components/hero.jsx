@@ -77,6 +77,12 @@ export default function Hero() {
               <div className="bg-white p-3 rounded-full shadow-md">🎓</div>
             </div>
 
+            <div className="hidden sm:block absolute bottom-24 left-16 animate-float">
+              <div className="bg-white p-3 rounded-full shadow-md text-3xl">
+                🩺
+              </div>
+            </div>
+
             {/* Decorative Background Blobs */}
             <div className="absolute -z-10 inset-0">
               <div className="absolute top-1/4 left-1/4 w-28 h-28 bg-red-200 rounded-full opacity-30 blur-2xl animate-pulse"></div>

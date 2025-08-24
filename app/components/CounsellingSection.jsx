@@ -70,18 +70,26 @@ export default function CounsellingSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
+          {/* Left Content */}
           <div ref={leftRef} data-animation="animate__fadeInLeft">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            {/* Tagline on top */}
+            <p className="text-[#EA4E14] font-semibold text-2xl mb-2">
+              Empowering Education Globally
+            </p>
+
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               <span className="text-[#EA4E14]">Get Free</span> Counselling
               <br />
               <span className="text-2xl md:text-3xl font-normal">
                 For Your Dream Medical Career
               </span>
             </h2>
+
             <p className="text-gray-700 text-lg mb-6">
               Connect with our experts to get personalized guidance, college
               selection help, and step-by-step admission support.
             </p>
+
             <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
               <div className="text-center mb-4">
                 <div className="text-sm text-gray-600 mb-1">
