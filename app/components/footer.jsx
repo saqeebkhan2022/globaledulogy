@@ -6,6 +6,8 @@ import {
   Mail,
   Phone,
   MapPin,
+  Youtube,
+  Send, // we'll use Send for Telegram
 } from "lucide-react";
 import Image from "next/image";
 import logo from "../../public/images/logo.png";
@@ -31,9 +33,12 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
               <Instagram className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
+              <Send className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />{" "}
+              <Twitter className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
               <Linkedin className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
+              <Youtube className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
+              {/* Telegram */}
             </div>
           </div>
 
@@ -57,7 +62,6 @@ export default function Footer() {
                   About Us
                 </a>
               </li>
-
               <li>
                 <a
                   href="#"
@@ -107,9 +111,11 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 text-[#EA4E14] mt-1 mr-2 flex-shrink-0" />
                 <span className="text-gray-300">
-                  Bangalore-04,
+                  Near Southend Circle Metro Station,
                   <br />
-                  Karnataka 560004
+                  R.V. Road, Basavanagudi,
+                  <br />
+                  Bangalore, Karnataka - 560004
                 </span>
               </div>
               <div className="flex items-center">

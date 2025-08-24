@@ -47,7 +47,7 @@ export default function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               {[
-                { value: "95%", label: "Job Placement" },
+                { value: "100%", label: "Guaranteed Admissions" },
                 { value: "50+", label: "Programs" },
                 { value: "25K+", label: "Graduates" },
               ].map((stat, i) => (
@@ -64,34 +64,38 @@ export default function Hero() {
           </div>
 
           {/* Right Content */}
-          <div className="relative flex justify-center">
-            <div className="w-full max-w-xs sm:max-w-sm md:max-w-md animate-float">
+          <div className="relative flex justify-center w-full h-full">
+            {/* Lottie Animation Container */}
+            <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl animate-float h-96 sm:h-[28rem] md:h-[32rem] lg:h-[36rem]">
               <Lottie animationData={studyAbroadAnimation} loop autoplay />
             </div>
 
             {/* Floating Emojis */}
             <div className="hidden sm:block absolute top-8 right-8 animate-float">
-              <div className="bg-white p-3 rounded-full shadow-md">✈️</div>
+              <div className="bg-white p-4 sm:p-5 rounded-full shadow-md text-4xl sm:text-5xl">
+                ✈️
+              </div>
             </div>
-            <div className="hidden sm:block absolute bottom-16 right-12 animate-float">
-              <div className="bg-white p-3 rounded-full shadow-md">🎓</div>
+            <div className="hidden sm:block absolute bottom-25 right-6 animate-float">
+              <div className="bg-white p-4 sm:p-5 rounded-full shadow-md text-4xl sm:text-5xl">
+                🎓
+              </div>
             </div>
-
-            <div className="hidden sm:block absolute bottom-24 left-16 animate-float">
-              <div className="bg-white p-3 rounded-full shadow-md text-3xl">
+            <div className="hidden sm:block absolute bottom-24 left-3 animate-float ">
+              <div className="bg-white p-4 sm:p-5 rounded-full shadow-md text-4xl sm:text-5xl">
                 🩺
               </div>
             </div>
 
             {/* Decorative Background Blobs */}
             <div className="absolute -z-10 inset-0">
-              <div className="absolute top-1/4 left-1/4 w-28 h-28 bg-red-200 rounded-full opacity-30 blur-2xl animate-pulse"></div>
+              <div className="absolute top-1/4 left-1/4 w-36 h-36 bg-red-200 rounded-full opacity-30 blur-2xl animate-pulse"></div>
               <div
-                className="absolute bottom-1/4 right-1/4 w-20 h-20 bg-blue-200 rounded-full opacity-30 blur-2xl animate-pulse"
+                className="absolute bottom-1/4 right-1/4 w-28 h-28 bg-blue-200 rounded-full opacity-30 blur-2xl animate-pulse"
                 style={{ animationDelay: "1s" }}
               ></div>
               <div
-                className="absolute top-1/2 right-1/3 w-16 h-16 bg-yellow-200 rounded-full opacity-30 blur-2xl animate-pulse"
+                className="absolute top-1/2 right-1/3 w-24 h-24 bg-yellow-200 rounded-full opacity-30 blur-2xl animate-pulse"
                 style={{ animationDelay: "2s" }}
               ></div>
             </div>

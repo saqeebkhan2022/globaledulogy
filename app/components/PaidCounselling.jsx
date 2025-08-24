@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "animate.css";
 import QRCode from "react-qr-code";
 import { toast } from "react-toastify";
-import plans from "../data/Plans";
+import plans from "../data/Plans.json"; // Assume this contains both UG & PG plans
 
 function PlanCard({ plan, onBook, animation }) {
   const cardRef = useRef(null);
@@ -14,7 +14,7 @@ function PlanCard({ plan, onBook, animation }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate__animated", animation);
-            observerInstance.unobserve(entry.target); // only animate once
+            observerInstance.unobserve(entry.target);
           }
         });
       },
@@ -42,7 +42,7 @@ function PlanCard({ plan, onBook, animation }) {
         <p>
           ₹{plan.price.toLocaleString()}.00{" "}
           <span className="text-zinc-500">
-            (+ GST ₹{plan.gst.toLocaleString()}.00)
+            (+18% GST ₹{plan.gst.toLocaleString()}.00)
           </span>
         </p>
         <p className="font-bold text-lg mt-1" style={{ color: "#003366" }}>
@@ -65,6 +65,7 @@ export default function PaidCounselling() {
   const [paid, setPaid] = useState(false);
   const [phone, setPhone] = useState("");
   const [utr, setUtr] = useState("");
+  const [isUG, setIsUG] = useState(true); // UG by default
 
   const handleBook = (plan) => {
     setSelectedPlan(plan);
@@ -94,6 +95,11 @@ export default function PaidCounselling() {
     });
   };
 
+  // Filter UG vs PG plans
+  const displayedPlans = plans.filter((p) =>
+    isUG ? p.category === "UG" : p.category === "PG"
+  );
+
   return (
     <section id="paid-counselling" className="relative py-14 sm:py-20">
       <div className="mx-auto max-w-7xl px-4">
@@ -108,11 +114,20 @@ export default function PaidCounselling() {
             Choose your stream and get professional, personalized counselling
             with transparent pricing.
           </p>
+
+          {/* UG / PG Toggle Button */}
+          <button
+            onClick={() => setIsUG(!isUG)}
+            className="mt-4 px-6 py-2 rounded-lg font-medium shadow-md transition"
+            style={{ backgroundColor: "#EA4E14", color: "white" }}
+          >
+            {isUG ? "Switch to PG Plans" : "Switch to UG Plans"}
+          </button>
         </header>
 
-        {/* Animate cards with fadeInUp */}
+        {/* Animate cards */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {plans.map((p, i) => (
+          {displayedPlans.map((p) => (
             <PlanCard
               key={p.id}
               plan={p}

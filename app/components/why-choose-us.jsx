@@ -121,7 +121,7 @@ export default function WhyChooseUs() {
       icon: <Users className="h-10 w-10 text-[#EA4E14]" />,
       title: "Trusted Network",
       description:
-        "Access a reliable network of successful alumni and top medical colleges across India.",
+        "Access a reliable network of successful alumni and top medical colleges across India and Abroad.",
     },
     {
       icon: <BookOpen className="h-10 w-10 text-[#EA4E14]" />,
@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
       icon: <Star className="h-10 w-10 text-[#EA4E14]" />,
       title: "High Success Rate",
       description:
-        "Our personalized approach maximizes your chances of securing admission to premier institutions.",
+        "Our personalized approach maximizes your chances of securing admission to premium institutions.",
     },
   ];
 
@@ -163,11 +163,12 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Choose Global Education
+            Why Choose Global Edulogy
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Global Education combines experience, expertise, and a proven track
-            record to guide you towards admission in top medical colleges.
+            Global Edulogy combines experience, expertise, and a proven track
+            record of guiding you towards admission in top medical colleges in
+            India and Aborad.
           </p>
         </div>
 

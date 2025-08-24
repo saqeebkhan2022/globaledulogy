@@ -1,66 +1,202 @@
 [
   {
-    "id": "dental",
-    "name": "Dental",
-    "price": 1,
-    "gst": 0,
-    "total": 1,
-    "blurb": "Comprehensive counselling for Dental aspirants."
-  },
-  {
-    "id": "ayush",
-    "name": "Ayush",
-    "price": 20000,
-    "gst": 3600,
-    "total": 23600,
-    "blurb": "Expert guidance for the Ayush admissions."
-  },
-  {
-    "id": "veterinary",
-    "name": "Veterinary",
-    "price": 40000,
-    "gst": 7200,
-    "total": 47200,
-    "blurb": "Personalized counselling for Veterinary students."
-  },
-  {
-    "id": "nursing",
-    "name": "Nursing",
-    "price": 10000,
-    "gst": 1800,
-    "total": 11800,
-    "blurb": "Affordable guidance for Nursing admissions."
-  },
-  {
-    "id": "medical",
-    "name": "Medical",
+    "id": "mbbs-government",
+    "name": "MBBS",
     "price": 50000,
     "gst": 9000,
     "total": 59000,
-    "blurb": "Premium counselling for Medical aspirants."
+    "blurb": "Premium counselling for MBBS Government Colleges.",
+    "category": "UG"
   },
   {
-    "id": "engineering",
-    "name": "Engineering",
-    "price": 30000,
-    "gst": 5400,
-    "total": 35400,
-    "blurb": "Professional guidance for Engineering admissions."
+    "id": "mbbs-private",
+    "name": "MBBS",
+    "price": 100000,
+    "gst": 18000,
+    "total": 118000,
+    "blurb": "Premium counselling for MBBS Private Colleges.",
+    "category": "UG"
   },
   {
-    "id": "pharmacy",
-    "name": "Pharmacy",
-    "price": 15000,
-    "gst": 2700,
-    "total": 17700,
-    "blurb": "Counselling services for Pharmacy students."
-  },
-  {
-    "id": "law",
-    "name": "Law",
+    "id": "bds-government",
+    "name": "BDS",
     "price": 25000,
     "gst": 4500,
     "total": 29500,
-    "blurb": "Expert support for Law counselling process."
+    "blurb": "Premium Counselling for Government Dental (BDS) Colleges.",
+    "category": "UG"
+  },
+  {
+    "id": "bds-private",
+    "name": "BDS",
+    "price": 50000,
+    "gst": 9000,
+    "total": 59000,
+    "blurb": "Premium Counselling for Private Dental (BDS) Colleges.",
+    "category": "UG"
+  },
+  {
+    "id": "bams-government",
+    "name": "BAMS",
+    "price": 25000,
+    "gst": 4500,
+    "total": 29500,
+    "blurb": "Premium Counselling for Government Ayurveda (BAMS) Colleges.",
+    "category": "UG"
+  },
+  {
+    "id": "bams-private",
+    "name": "BAMS",
+    "price": 50000,
+    "gst": 9000,
+    "total": 59000,
+    "blurb": "Premium Counselling for Private Ayurveda (BAMS) Colleges.",
+    "category": "UG"
+  },
+
+  {
+    "id": "bhms",
+    "name": "BHMS",
+    "price": 25000,
+    "gst": 4500,
+    "total": 29500,
+    "blurb": "Premium Counselling for  Homeopathy (BHMS) Colleges.",
+    "category": "UG"
+  },
+
+  {
+    "id": "bums",
+    "name": "BUMS",
+    "price": 25000,
+    "gst": 4500,
+    "total": 29500,
+    "blurb": "Premium Counselling for  Unani (BUMS) Colleges.",
+    "category": "UG"
+  },
+  {
+    "id": "veterinary",
+    "name": "VETERINARY",
+    "price": 25000,
+    "gst": 4500,
+    "total": 29500,
+    "blurb": "Premium Counselling for  Veterinary Colleges.",
+    "category": "UG"
+  },
+  {
+    "id": "nursing",
+    "name": "NURSING",
+    "price": 25000,
+    "gst": 4500,
+    "total": 29500,
+    "blurb": "Premium Counselling for Nursing Colleges.",
+    "category": "UG"
+  },
+  {
+    "id": "pharmacy",
+    "name": "PHARMACY",
+    "price": 25000,
+    "gst": 4500,
+    "total": 29500,
+    "blurb": "Premium Counselling for Pharmacy Colleges.",
+    "category": "UG"
+  },
+  {
+    "id": "bpt",
+    "name": "BPT & ALLIED HEALTH",
+    "price": 25000,
+    "gst": 4500,
+    "total": 29500,
+    "blurb": "Premium Counselling for BPT & Allied Health Colleges.",
+    "category": "UG"
+  },
+  {
+    "id": "dm-mch",
+    "name": "DM/MCH",
+    "price": 100000,
+    "gst": 18000,
+    "total": 118000,
+    "blurb": "Premium Counselling for DM/MCH Colleges.",
+    "category": "PG"
+  },
+  {
+    "id": "md-ms-government",
+    "name": "MD/MS",
+    "price": 100000,
+    "gst": 18000,
+    "total": 118000,
+    "blurb": "Premium Counselling for Government MD/MS Colleges.",
+    "category": "PG"
+  },
+  {
+    "id": "md-ms-private",
+    "name": "MD/MS",
+    "price": 200000,
+    "gst": 36000,
+    "total": 236000,
+    "blurb": "Premium Counselling for Private MD/MS Colleges.",
+    "category": "PG"
+  },
+  {
+    "id": "dnb",
+    "name": "DNB",
+    "price": 50000,
+    "gst": 9000,
+    "total": 59000,
+    "blurb": "Premium Counselling for DNB Hospitals.",
+    "category": "PG"
+  },
+  {
+    "id": "nbe-diploma",
+    "name": "NBE DIPLOMA",
+    "price": 50000,
+    "gst": 9000,
+    "total": 59000,
+    "blurb": "Premium Counselling for NBE Diploma Hospitals.",
+    "category": "PG"
+  },
+  {
+    "id": "pg-diploma",
+    "name": "PG DIPLOMA",
+    "price": 50000,
+    "gst": 9000,
+    "total": 59000,
+    "blurb": "Premium Counselling for PG Diploma Colleges.",
+    "category": "PG"
+  },
+  {
+    "id": "mds-government",
+    "name": "MDS",
+    "price": 50000,
+    "gst": 9000,
+    "total": 59000,
+    "blurb": "Premium Counselling for Government MDS (Dental PG) Colleges.",
+    "category": "PG"
+  },
+  {
+    "id": "mds-private",
+    "name": "MDS",
+    "price": 100000,
+    "gst": 18000,
+    "total": 118000,
+    "blurb": "Premium Counselling for Private MDS (Dental PG) Colleges.",
+    "category": "PG"
+  },
+  {
+    "id": "ayush-pg-government",
+    "name": "AYUSH PG",
+    "price": 50000,
+    "gst": 9000,
+    "total": 59000,
+    "blurb": "Premium Counselling for Government Ayush postgraduate Colleges.",
+    "category": "PG"
+  },
+  {
+    "id": "ayush-pg-private",
+    "name": "AYUSH PG",
+    "price": 100000,
+    "gst": 18000,
+    "total": 118000,
+    "blurb": "Premium Counselling for Private Ayush postgraduate Colleges.",
+    "category": "PG"
   }
 ]

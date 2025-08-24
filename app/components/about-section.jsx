@@ -12,13 +12,13 @@ export default function AboutSection() {
       icon: <Award className="h-8 w-8 text-[#EA4E14]" />,
       title: "Proven Track Record",
       description:
-        "Over 25,000 successful admissions with a 95% placement rate in top universities.",
+        "Over 10,000 successful admissions with a 95% placement rate in top universities.",
     },
     {
       icon: <Globe className="h-8 w-8 text-[#EA4E14]" />,
       title: "Global Partnerships",
       description:
-        "Direct partnerships with top universities in Nepal, Georgia, Bangladesh, and Russia.",
+        "Direct partnerships with top universities in Nepal, Russia, Georgia, and Bangladesh etc.",
     },
     {
       icon: <CheckCircle className="h-8 w-8 text-[#EA4E14]" />,
