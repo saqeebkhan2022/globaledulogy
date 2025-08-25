@@ -16,7 +16,6 @@ export default function Home() {
       <AboutSection />
       <CounsellingSection />
       <Stats />
-      <SocialFloat />
       <WhyChooseUs />
       <PaidCounselling />
       <Testimonials />

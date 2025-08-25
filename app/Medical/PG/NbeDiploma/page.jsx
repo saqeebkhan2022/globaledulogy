@@ -124,12 +124,12 @@ const Page = () => {
     ["Gujarat - BJMC, Ahmedabad", "₹84,000"],
     ["Karnataka - BMC, Bangalore", "₹45,000"],
     ["Maharashtra - Grant Medical College, Mumbai", "₹54,686"],
-    ["Tamil Nadu - MMC, Chennai", "₹40,000"],
+    ["TamilNadu - MMC, Chennai", "₹40,000"],
     ["Uttar Pradesh - KGMU, Lucknow", "₹55,000"],
   ];
 
   const feeStructure = [
-    ["Tamil Nadu (Govt.)", "₹1,25,000/year tuition + ₹30,000 security deposit"],
+    ["TamilNadu (Govt.)", "₹1,25,000/year tuition + ₹30,000 security deposit"],
     [
       "Other States/Institutions",
       "Varies by hospital policy, usually lower in govt. hospitals",

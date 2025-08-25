@@ -80,11 +80,7 @@ const Page = () => {
       "MD/MS Ayurveda",
     ],
     ["Tata Memorial Hospital", "Mumbai, Maharashtra", "M.Sc. Yoga Therapy"],
-    [
-      "University of Madras",
-      "Chennai, Tamil Nadu",
-      "MD Homeopathy, M.Sc. Yoga",
-    ],
+    ["University of Madras", "Chennai, TamilNadu", "MD Homeopathy, M.Sc. Yoga"],
     ["Dr. BR Ambedkar University", "Agra, Uttar Pradesh", "M.Sc. Yoga Therapy"],
     ["Ayurvedic College & Hospital", "Pune, Maharashtra", "MD/MS Ayurveda"],
   ];
@@ -94,7 +90,7 @@ const Page = () => {
     ["Bharati Vidyapeeth University", "Pune, Maharashtra", "MD/MS Ayurveda"],
     ["KLE University", "Belgaum, Karnataka", "MD Ayurveda, M.Sc. Yoga"],
     ["Patanjali University", "Haridwar, Uttarakhand", "M.Sc. Yoga Therapy"],
-    ["Dr. MGR Medical University", "Chennai, Tamil Nadu", "MD/MS Ayurveda"],
+    ["Dr. MGR Medical University", "Chennai, TamilNadu", "MD/MS Ayurveda"],
     ["Sree Sankara University of Sanskrit", "Kalady, Kerala", "MD/MS Ayurveda"],
     [
       "Kerala University of Health Sciences",

@@ -9,13 +9,13 @@ export async function POST(req) {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: "shshank2022@gmail.com",
+        pass: "ykcxlpiqhykmqscw",
       },
     });
 
     await transporter.sendMail({
-      from: `"Counselling Form" <${process.env.EMAIL_USER}>`,
+      from: `"Counselling Form" <${"shshank2022@gmail.com"}>`,
       to: "quadriabsaar@gmail.com",
       subject: "New Counselling Payment Submission",
       html: `

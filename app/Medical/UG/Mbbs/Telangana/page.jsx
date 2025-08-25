@@ -32,7 +32,7 @@ const Page = () => {
     "Punjab",
     "Rajasthan",
     "Sikkim",
-    "Tamil Nadu",
+    "TamilNadu",
     "Telangana",
     "Tripura",
     "Uttar Pradesh",
@@ -214,16 +214,21 @@ const Page = () => {
       />
 
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
-        <aside className=" md:block col-span-1 sticky top-24 self-start bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+        {/* Sidebar */}
+        <aside className="hidden md:block col-span-1 sticky top-24 self-start bg-white shadow-lg rounded-xl p-6 border border-gray-200">
           <h2 className="text-xl font-semibold mb-4 text-[#EA4E14]">
             State Wise Counselling
           </h2>
+          <p className="text-sm text-gray-700 mb-6">
+            Click your state below to check MBBS counselling details,
+            eligibility, and registration process.
+          </p>
           <div className="grid grid-cols-1 gap-2">
             {states.map((state) => (
               <Link
                 key={state}
                 href={getStateUrl(state)}
-                className={`block rounded-lg text-center border p-2 text-sm font-medium shadow-sm ${
+                className={`block rounded-lg text-center border border-gray-200 transition p-2 text-sm font-medium shadow-sm ${
                   state === "Telangana"
                     ? "bg-[#EA4E14] text-white"
                     : "bg-[#003366] hover:bg-[#0055aa] text-white"

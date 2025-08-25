@@ -7,6 +7,7 @@ import WhatsAppFloat from "./components/WhatsAppFloat";
 import CallFloat from "./components/CallFloat";
 import CTASection from "./components/cta-section";
 import { ToastContainer } from "react-toastify";
+import SocialFloat from "./components/SocialFloat";
 
 export default function RootClientLayout({ children }) {
   const pathname = usePathname();
@@ -20,6 +21,7 @@ export default function RootClientLayout({ children }) {
     <>
       {!hideComponents && <Navbar />}
       {children}
+      {!hideComponents && <SocialFloat />}
       {!hideComponents && <WhatsAppFloat />}
       {!hideComponents && <CallFloat />}
       {!hideComponents && <CTASection />}

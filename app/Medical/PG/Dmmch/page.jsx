@@ -62,7 +62,7 @@ const Page = () => {
       "Government Colleges",
       "1–3 Years",
       "₹10 Lakhs – ₹2 Crores",
-      "e.g. Tamil Nadu: ₹50 lakh for 2 years",
+      "e.g. TamilNadu: ₹50 lakh for 2 years",
     ],
     [
       "Private Colleges",
