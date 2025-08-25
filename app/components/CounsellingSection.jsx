@@ -26,7 +26,7 @@ export default function CounsellingSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/api/counselling", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
