@@ -187,10 +187,10 @@ const Page = () => {
   ];
 
   const domicileCriteria = [
-    "Candidates must be residents of Tamil Nadu for state quota seats",
-    "Candidates born or residing in Tamil Nadu for last 5 years are eligible",
-    "Non-Tamil Nadu residents can apply for All India Quota (AIQ) seats",
-    "Candidates belonging to Tamil Nadu but studied outside can apply under Tamil Nadu domicile quota",
+    "Candidates must be residents of TamilNadu for state quota seats",
+    "Candidates born or residing in TamilNadu for last 5 years are eligible",
+    "Non-TamilNadu residents can apply for All India Quota (AIQ) seats",
+    "Candidates belonging to TamilNadu but studied outside can apply under TamilNadu domicile quota",
   ];
 
   const counsellingSteps = [
@@ -214,7 +214,7 @@ const Page = () => {
     "Transfer Certificate (TC)",
     "Community Certificate (for SC/ST/OBC)",
     "Birth Certificate (if required)",
-    "Domicile Certificate (for Tamil Nadu residents)",
+    "Domicile Certificate (for TamilNadu residents)",
     "Aadhar Card",
     "Passport-size Photographs",
     "Income Certificate (if applicable)",
@@ -264,20 +264,20 @@ const Page = () => {
   return (
     <>
       <SEO
-        title="MBBS in Tamil Nadu - NEET UG Admission & Top College"
-        description="Complete guide for MBBS admission in Tamil Nadu with eligibility, counselling, reservation, fees, and top medical colleges."
+        title="MBBS in TamilNadu - NEET UG Admission & Top College"
+        description="Complete guide for MBBS admission in TamilNadu with eligibility, counselling, reservation, fees, and top medical colleges."
         keywords={[
-          "MBBS Tamil Nadu",
-          "NEET UG Tamil Nadu",
-          "Tamil Nadu Medical Colleges",
+          "MBBS TamilNadu",
+          "NEET UG TamilNadu",
+          "TamilNadu Medical Colleges",
         ]}
         canonical="https://www.globaledulogy.com/Medical/UG/Mbbs/Tamil-Nadu"
       />
 
       <Header
-        title="MBBS in Tamil Nadu"
+        title="MBBS in TamilNadu"
         subtitle="Top Medical Colleges and NEET UG Counselling"
-        description="Explore MBBS admission in Tamil Nadu with eligibility, counselling, reservation, and top colleges."
+        description="Explore MBBS admission in TamilNadu with eligibility, counselling, reservation, and top colleges."
       />
 
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -354,23 +354,23 @@ const Page = () => {
         <main className="col-span-3 space-y-12 text-gray-800">
           <section>
             <p className="leading-relaxed text-gray-700 mb-4">
-              In Tamil Nadu, MBBS is offered by several government and private
+              In TamilNadu, MBBS is offered by several government and private
               colleges. Admission is based on NEET UG results, with a
               combination of state quota and All India Quota (AIQ) seats.
             </p>
             <p className="leading-relaxed text-gray-700 mb-4 font-semibold">
-              Global Edulogy – Expert Guidance for MBBS Admission in Tamil Nadu
+              Global Edulogy – Expert Guidance for MBBS Admission in TamilNadu
             </p>
             <p className="leading-relaxed text-gray-700 mb-4">
               Global Edulogy helps students navigate NEET UG counselling,
-              ensuring a smooth admission process in top Tamil Nadu medical
+              ensuring a smooth admission process in top TamilNadu medical
               colleges.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">
-              Private Medical Colleges in Tamil Nadu
+              Private Medical Colleges in TamilNadu
             </h2>
             {renderTable(privateColleges, [
               "S.No",
@@ -382,7 +382,7 @@ const Page = () => {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">
-              Government Medical Colleges in Tamil Nadu
+              Government Medical Colleges in TamilNadu
             </h2>
             {renderTable(governmentColleges, [
               "S.No",

@@ -9,6 +9,15 @@ import {
   Youtube,
   Send, // we'll use Send for Telegram
 } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faXTwitter,
+  faInstagram,
+  faYoutube,
+  faLinkedinIn,
+  faTelegramPlane,
+} from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import logo from "../../public/images/logo.png";
 
@@ -32,12 +41,15 @@ export default function Footer() {
               opportunities since 2010.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
-              <Instagram className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
-              <Send className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />{" "}
-              <X className="h-6 w-6 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
-              <Linkedin className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
-              <Youtube className="h-5 w-5 text-gray-400 hover:text-[#EA4E14] cursor-pointer transition-colors" />
+              <Facebook className="h-5 w-5 text-white hover:text-[#EA4E14] cursor-pointer transition-colors" />
+              <Instagram className="h-5 w-5 text-white hover:text-[#EA4E14] cursor-pointer transition-colors" />
+              <Send className="h-5 w-5 text-white hover:text-[#EA4E14] cursor-pointer transition-colors" />{" "}
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                className="h-5 w-5 text-white hover:text-[#EA4E14] cursor-pointer transition-colors"
+              />
+              <Linkedin className="h-[25px] w-5 text-white hover:text-[#EA4E14] cursor-pointer transition-colors" />
+              <Youtube className="h-5 w-5 text-white hover:text-[#EA4E14] cursor-pointer transition-colors" />
               {/* Telegram */}
             </div>
           </div>

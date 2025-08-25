@@ -32,7 +32,7 @@ const Page = () => {
     "Punjab",
     "Rajasthan",
     "Sikkim",
-    "Tamil Nadu",
+    "TamilNadu",
     "Telangana",
     "Tripura",
     "Uttar Pradesh",

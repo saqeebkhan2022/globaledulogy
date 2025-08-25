@@ -32,7 +32,7 @@ const Page = () => {
     "Punjab",
     "Rajasthan",
     "Sikkim",
-    "Tamil Nadu",
+    "TamilNadu",
     "Telangana",
     "Uttar Pradesh",
     "Uttarakhand",
@@ -43,16 +43,11 @@ const Page = () => {
     [1, "KPC Medical College & Hospital, Jadavpur", 2008, 200],
     [2, "ICARE Institute of Medical Sciences & Research, Haldia", 2011, 150],
     [3, "Jagannath Gupta Institute of Medical Sciences & Hospital", 2018, 200],
-    [
-      4,
-      "Gouri Devi Institute of Medical Sciences and Hospital, Durgapur",
-      2016,
-      200,
-    ],
+    [4, "Gouri Devi Institute of Medical Sciences, Durgapur", 2016, 200],
     [5, "IQ-City Medical College, Durgapur", 2013, 250],
     [6, "JIS School of Medical Science & Research, Howrah", 2023, 150],
     [7, "Santiniketan Medical College, Bolpur", 2021, 150],
-    [8, "JMN Medical College , Nadia", 2023, 150],
+    [8, "JMN Medical College, Nadia", 2023, 150],
     [
       9,
       "Shri Ramkrishna Institute of Medical Sciences & Sanaka Hospitals, Durgapur",
@@ -68,7 +63,7 @@ const Page = () => {
     ],
     [
       12,
-      "Jakir Hossain medical college and research institute, Murshidabad",
+      "Jakir Hossain Medical College & Research Institute, Murshidabad",
       2024,
       50,
     ],
@@ -82,44 +77,24 @@ const Page = () => {
     [5, "R.G. Kar Medical College, Kolkata", 1916, 251],
     [6, "College Of Medicine And Sagore Dutta Hospital, Kamarhati", 2011, 125],
     [7, "Burdwan Medical College, Burdwan", 1969, 200],
-    [8, "ESI PGI MSR And ESIC Medical College Joka Kolkata", 2013, 125],
+    [8, "ESI PGIMSR & ESIC Medical College, Joka Kolkata", 2013, 125],
     [9, "College Of Medicine And JNM Hospital, Kalyani", 2010, 125],
     [10, "Bankura Sammilani Medical College, Bankura", 1956, 200],
-    [11, "Barasat Government Medical College And Hospital, Barasat", 2022, 100],
+    [11, "Barasat Government Medical College, Barasat", 2022, 100],
     [12, "Diamond Harbour Medical College, Harindanga", 2019, 100],
-    [13, "North Bengal Medical College And Hospital, Darjeeling", 1968, 200],
+    [13, "North Bengal Medical College, Darjeeling", 1968, 200],
     [14, "Midnapore Medical College, Midnapore", 2001, 200],
-    [15, "Murshidabad Medical College And Hospital, Murshidabad", 2012, 125],
-    [16, "Malda Medical College And Hospital, Malda", 2011, 125],
+    [15, "Murshidabad Medical College, Murshidabad", 2012, 125],
+    [16, "Malda Medical College, Malda", 2011, 125],
     [17, "Prafulla Chandra Sen Government Medical College, Hooghly", 2022, 100],
-    [
-      18,
-      "Sarat Chandra Chattopadhyay Government Medical College And Hospital, Howrah",
-      2022,
-      100,
-    ],
-    [19, "Rampurhat Govt Medical College And Hospital", 2019, 100],
-    [
-      20,
-      "Tamralipto Government Medical College And Hospital, Medinipur",
-      2022,
-      100,
-    ],
-    [21, "Purulia Government Medical College & Hospital", 2022, 100],
-    [22, "Raiganj Govt Medical College And Hospital, Raiganj", 2019, 100],
-    [
-      23,
-      "Jhargram Government Medical College And Hospital, Jhargram",
-      2022,
-      100,
-    ],
-    [
-      24,
-      "Coochbehar Government Medical College & Hospital, Coochbehar",
-      2019,
-      100,
-    ],
-    [25, "Jalpaiguri Government Medical College, Jalpaiguri", 2019, 100],
+    [18, "Sarat Chandra Chattopadhyay Govt Medical College, Howrah", 2022, 100],
+    [19, "Rampurhat Govt Medical College, Rampurhat", 2019, 100],
+    [20, "Tamralipto Govt Medical College, Medinipur", 2022, 100],
+    [21, "Purulia Govt Medical College, Purulia", 2022, 100],
+    [22, "Raiganj Govt Medical College, Raiganj", 2019, 100],
+    [23, "Jhargram Govt Medical College, Jhargram", 2022, 100],
+    [24, "Coochbehar Govt Medical College, Coochbehar", 2019, 100],
+    [25, "Jalpaiguri Govt Medical College, Jalpaiguri", 2019, 100],
   ];
 
   const counsellingInfo = {
@@ -133,20 +108,20 @@ const Page = () => {
   const counsellingDates = [
     ["Release of Application Form", "June 2025"],
     ["Last Date for Registration", "July 2025"],
-    ["Provisional Merit List Publication", "July 2025"],
+    ["Provisional Merit List", "July 2025"],
     ["Choice Filling & Locking", "July 2025"],
     ["Seat Allotment Round 1", "August 2025"],
-    ["Reporting to Allotted College", "August 2025"],
+    ["Reporting to College", "August 2025"],
     ["Round 2 Counselling", "August 2025"],
     ["Mop-Up Round", "September 2025"],
     ["Stray Vacancy Round", "September 2025"],
   ];
 
   const eligibility = [
-    "Qualification: Passed 10+2 with Physics, Chemistry, Biology/Biotechnology & English",
+    "Passed 10+2 with Physics, Chemistry, Biology/Biotechnology & English",
     "Minimum Marks: General – 50%, OBC/SC/ST – 40%, PwD – 45%",
-    "NEET UG Qualification: Must have qualified NEET UG 2025",
-    "Age Limit: Minimum 17 years by December 31, 2025",
+    "Must have qualified NEET UG 2025",
+    "Minimum Age: 17 years as on December 31, 2025",
   ];
 
   const domicileCriteria = [
@@ -156,10 +131,10 @@ const Page = () => {
 
   const registrationSteps = [
     "Visit the official WBMCC website",
-    "Register with basic details and NEET UG roll number",
+    "Register with basic details & NEET UG roll number",
     "Fill the application form and upload documents",
-    "Pay the registration fee",
-    "Submit the form and download the confirmation",
+    "Pay the registration fee online",
+    "Submit the form and download confirmation",
   ];
 
   const counsellingRounds = [
@@ -168,13 +143,13 @@ const Page = () => {
     "Choice Filling & Locking",
     "Seat Allotment Result",
     "Document Verification & Reporting",
-    "Stray Vacancy Round (if seats remain vacant)",
+    "Stray Vacancy Round (if seats remain)",
   ];
 
   const registrationFees = [
     ["General/OBC", "₹2000"],
     ["SC/ST/PwD", "₹1500"],
-    ["NRI Candidates", "₹5000"],
+    ["NRI", "₹5000"],
   ];
 
   const reservation = [
@@ -187,8 +162,7 @@ const Page = () => {
   ];
 
   const documentsRequired = [
-    "NEET UG 2025 Admit Card",
-    "NEET UG 2025 Scorecard",
+    "NEET UG 2025 Admit Card & Scorecard",
     "Class 10 & 12 Mark Sheets",
     "Domicile Certificate (if applicable)",
     "Caste Certificate (if applicable)",
@@ -248,19 +222,23 @@ const Page = () => {
       />
 
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
-        <aside className="md:block col-span-1 sticky top-24 self-start bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+        <aside className="hidden md:block col-span-1 sticky top-24 self-start bg-white shadow-lg rounded-xl p-6 border border-gray-200">
           <h2 className="text-xl font-semibold mb-4 text-[#EA4E14]">
             State Wise Counselling
           </h2>
+          <p className="text-sm text-gray-700 mb-6">
+            Click your state below to check MBBS counselling details,
+            eligibility, and registration process.
+          </p>
           <div className="grid grid-cols-1 gap-2">
             {states.map((state) => (
               <Link
                 key={state}
                 href={getStateUrl(state)}
-                className={`block rounded-lg text-center border p-2 text-sm font-medium shadow-sm ${
-                  state === "West Bengal"
+                className={`block rounded-lg text-center border border-gray-200 transition p-2 text-sm font-medium shadow-sm ${
+                  state === "Uttarakhand"
                     ? "bg-[#EA4E14] text-white"
-                    : "bg-white text-gray-900 hover:bg-gray-100"
+                    : "bg-[#003366] hover:bg-[#0055aa] text-white"
                 }`}
               >
                 {state}
@@ -269,10 +247,64 @@ const Page = () => {
           </div>
         </aside>
 
-        <main className="md:col-span-3 space-y-8">
+        <div className="md:hidden ml-[40px] flex justify-center items-center w-full">
+          <div className="w-full max-w-xs items-center relative group">
+            <label
+              htmlFor="stateDropdown"
+              className="mb-4 text-2xl ml- font-bold text-[#EA4E14] text-center block"
+            >
+              State Wise Counselling
+            </label>
+            <select
+              id="stateDropdown"
+              className="w-full bg-[#EA4E14] text-white text-center text-lg font-medium p-3 rounded-full shadow-lg hover:bg-[#ff5e2b] focus:outline-none focus:ring-4 focus:ring-[#FFAB91] transition-colors appearance-none pr-8 cursor-pointer"
+              onChange={(e) => {
+                const url = e.target.value;
+                if (url) window.location.href = url;
+              }}
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select your state
+              </option>
+              {states.map((state) => (
+                <option key={state} value={getStateUrl(state)}>
+                  {state}
+                </option>
+              ))}
+            </select>
+            {/* The custom chevron icon */}
+            <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+              <svg
+                className="h-8 w-8 mt-12 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <main className="col-span-3 space-y-12 text-gray-800">
+          <section>
+            <p className="text-gray-700 leading-relaxed">
+              West Bengal is one of the top destinations for MBBS in India,
+              offering prestigious government and private medical colleges with
+              strong clinical exposure and infrastructure.
+            </p>
+          </section>
+
           <section>
             <h2 className="text-2xl font-semibold mb-4">
-              Private MBBS Colleges
+              Private Medical Colleges
             </h2>
             {renderTable(privateColleges, [
               "S.No",
@@ -284,7 +316,7 @@ const Page = () => {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">
-              Government MBBS Colleges
+              Government Medical Colleges
             </h2>
             {renderTable(governmentColleges, [
               "S.No",
@@ -301,14 +333,14 @@ const Page = () => {
             <ul className="list-disc pl-6 space-y-1">
               <li>Conducting Authority: {counsellingInfo.authority}</li>
               <li>Mode: {counsellingInfo.mode}</li>
-              <li>Courses Covered: {counsellingInfo.courses}</li>
+              <li>Courses: {counsellingInfo.courses}</li>
               <li>Exam Accepted: {counsellingInfo.exam}</li>
               <li>
                 Official Website:{" "}
                 <a
                   href={counsellingInfo.website}
                   target="_blank"
-                  className="text-blue-600"
+                  className="text-blue-600 underline"
                 >
                   {counsellingInfo.website}
                 </a>
@@ -355,12 +387,14 @@ const Page = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Counselling Rounds</h2>
-            <ul className="list-disc pl-6 space-y-1">
-              {counsellingRounds.map((item, i) => (
-                <li key={i}>{item}</li>
+            <h2 className="text-2xl font-semibold mb-4">
+              Steps of Counselling Rounds
+            </h2>
+            <ol className="list-decimal pl-6 space-y-1">
+              {counsellingRounds.map((step, i) => (
+                <li key={i}>{step}</li>
               ))}
-            </ul>
+            </ol>
           </section>
 
           <section>
@@ -369,41 +403,18 @@ const Page = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">
-              Reservation Criteria
-            </h2>
-            {renderTable(reservation, ["Category", "Percentage (%)"])}
+            <h2 className="text-2xl font-semibold mb-4">Reservation Policy</h2>
+            {renderTable(reservation, ["Category", "Percentage"])}
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">
-              Documents Required for Counselling
-            </h2>
+            <h2 className="text-2xl font-semibold mb-4">Documents Required</h2>
             <ul className="list-disc pl-6 space-y-1">
-              {documentsRequired.map((item, i) => (
-                <li key={i}>{item}</li>
+              {documentsRequired.map((doc, i) => (
+                <li key={i}>{doc}</li>
               ))}
             </ul>
           </section>
-
-          {/* <section className="bg-[#EA4E14] text-white p-6 rounded-xl shadow-lg"> */}
-          {/* <h2 className="text-2xl font-semibold mb-4">
-              Get Admission into Top MBBS Colleges in West Bengal
-            </h2>
-            <p className="mb-4">
-              Global Education offers expert guidance to help you secure
-              admission into top MBBS colleges in West Bengal. Our experienced
-              counselors provide personalized support throughout the NEET UG
-              counselling process.
-            </p>
-            <Link
-              href="https://www.globaledulogy.com/contact"
-              className="bg-white text-[#EA4E14] px-6 py-3 rounded-lg font-semibold inline-block hover:bg-gray-100"
-            >
-              Contact Global Education Now
-            </Link> */}
-          {/* </section> */}
-          
         </main>
       </div>
     </>
