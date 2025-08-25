@@ -65,13 +65,13 @@ export default function CounsellingSection() {
   return (
     <section
       id="contact"
-      className="w-full h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center"
+      className="w-full bg-gradient-to-br from-blue-50 to-purple-50
+             lg:h-screen flex items-center py-16 lg:py-0"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full">
           {/* Left Content */}
           <div ref={leftRef} data-animation="animate__fadeInLeft">
-            {/* Tagline on top */}
             <p className="text-[#EA4E14] font-semibold text-2xl mb-2">
               Empowering Education Globally
             </p>
