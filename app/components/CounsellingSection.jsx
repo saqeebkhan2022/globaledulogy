@@ -65,11 +65,10 @@ export default function CounsellingSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-br from-blue-50 to-purple-50"
+      className="w-full h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full">
           {/* Left Content */}
           <div ref={leftRef} data-animation="animate__fadeInLeft">
             {/* Tagline on top */}
