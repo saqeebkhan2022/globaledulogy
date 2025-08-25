@@ -12,7 +12,7 @@ export default function DashboardPage() {
       <div className="space-y-6">
         {/* Welcome Section */}
         <div className="bg-gray-800 text-white p-6 rounded-lg">
-          <h1 className="text-2xl font-bold mb-2">Welcome to Absaar</h1>
+          <h1 className="text-2xl font-bold mb-2">Welcome  Absaar</h1>
           <p className="text-blue-100">
             Manage your educational programs and student counseling services
           </p>
