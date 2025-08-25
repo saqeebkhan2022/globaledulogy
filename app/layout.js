@@ -1,11 +1,43 @@
+// import { Geist, Geist_Mono } from "next/font/google";
+// import "./globals.css";
+// import Navbar from "./components/navbar";
+// import Footer from "./components/footer";
+// import WhatsAppFloat from "./components/WhatsAppFloat";
+// import CTASection from "./components/cta-section";
+// import CallFloat from "./components/CallFloat";
+// import { ToastContainer } from "react-toastify";
+// import RootClientLayout from "./root-client-layout";
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+// export const metadata = {
+//   title: "Global Edulogy",
+//   description: "Empowering Education Globally",
+// };
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <body
+//         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+//       >
+//         <RootClientLayout>{children}</RootClientLayout>
+//       </body>
+//     </html>
+//   );
+// }
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import WhatsAppFloat from "./components/WhatsAppFloat";
-import CTASection from "./components/cta-section";
-import CallFloat from "./components/CallFloat";
-import { ToastContainer } from "react-toastify";
+import RootClientLayout from "./root-client-layout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,13 +60,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <WhatsAppFloat />
-        <CallFloat />
-        <CTASection />
-        <Footer />
-        <ToastContainer />
+        <RootClientLayout>{children}</RootClientLayout>
       </body>
     </html>
   );
