@@ -6,6 +6,8 @@ import { MdDashboard } from "react-icons/md";
 import { IoCall, IoSettings } from "react-icons/io5";
 import { FaBookOpen, FaMoneyBillWave } from "react-icons/fa";
 import { RiMoneyRupeeCircleFill } from "react-icons/ri";
+import { IoMdNotifications } from "react-icons/io";
+
 import Image from "next/image";
 import logo from "../../public/images/logo.png";
 
@@ -25,6 +27,12 @@ const links = [
     href: "/admin/dashboard/courses",
     icon: <FaBookOpen className="w-5 h-5" />,
   },
+  {
+    name: "Notifications",
+    href: "/admin/dashboard/notifications",
+    icon: <IoMdNotifications className="w-5 h-5" />,
+  },
+
   {
     name: "Paid Counselling",
     href: "/admin/dashboard/paid-counselling",
