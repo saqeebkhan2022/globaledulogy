@@ -5,6 +5,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
 import logo from "../../public/images/logo.png";
 import { toast } from "react-toastify";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,12 +68,14 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <Image
-                src={logo}
-                alt="Global Edulogy"
-                className="ml-2 h-12 w-30"
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src={logo}
+                  alt="Global Edulogy"
+                  className="ml-2 h-12 w-30 cursor-pointer"
+                  priority
+                />
+              </Link>
             </div>
 
             {/* Desktop Navigation */}

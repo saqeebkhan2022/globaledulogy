@@ -37,12 +37,12 @@ export default function Hero() {
             </p>
 
             {/* CTA Button */}
-            <div href="#contact">
+            <a href="#contact">
               <button className="bg-[#EA4E14] hover:bg-[#d63f0f] text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-3 mx-auto lg:mx-0 transition-all shadow-lg">
                 Start Your Journey
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </button>
-            </div>
+            </a>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
