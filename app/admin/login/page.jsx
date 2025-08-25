@@ -86,12 +86,6 @@ export default function AdminLoginPage() {
             </div>
 
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <input type="checkbox" id="remember" className="rounded" />
-                <label htmlFor="remember" className="text-sm text-gray-600">
-                  Remember me
-                </label>
-              </div>
               <Link href="#" className="text-sm text-gray-800 hover:underline">
                 Forgot password?
               </Link>
@@ -105,18 +99,6 @@ export default function AdminLoginPage() {
               {isLoading ? "Signing in..." : "Admin Sign In"}
             </button>
           </form>
-
-          <div className="mt-6 text-center">
-            <p className="text-sm text-gray-600">
-              {"Need user access? "}
-              <Link
-                href="/login"
-                className="text-blue-600 hover:underline font-medium"
-              >
-                Go to User Login
-              </Link>
-            </p>
-          </div>
         </div>
 
         <div className="mt-8 text-center">

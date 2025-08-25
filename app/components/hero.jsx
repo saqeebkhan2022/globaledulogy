@@ -71,18 +71,20 @@ export default function Hero() {
             </div>
 
             {/* Floating Emojis */}
-            <div className="absolute top-8 right-8 animate-float">
-              <div className="bg-white p-4 sm:p-5 rounded-full shadow-md text-4xl sm:text-5xl">
+            <div className="absolute top-4 sm:top-8 right-4 sm:right-8 animate-float">
+              <div className="bg-white p-3 sm:p-4 rounded-full shadow-md text-2xl sm:text-4xl">
                 ✈️
               </div>
             </div>
-            <div className="absolute bottom-25 right-6 animate-float">
-              <div className="bg-white p-4 sm:p-5 rounded-full shadow-md text-4xl sm:text-5xl">
+
+            <div className="absolute bottom-4 sm:bottom-24 right-4 sm:right-6 animate-float">
+              <div className="bg-white p-3 sm:p-4 rounded-full shadow-md text-2xl sm:text-4xl">
                 🎓
               </div>
             </div>
-            <div className="absolute bottom-24 left-3 animate-float ">
-              <div className="bg-white p-4 sm:p-5 rounded-full shadow-md text-4xl sm:text-5xl">
+
+            <div className="absolute bottom-4 sm:bottom-24 left-4 sm:left-3 animate-float">
+              <div className="bg-white p-3 sm:p-4 rounded-full shadow-md text-2xl sm:text-4xl">
                 🩺
               </div>
             </div>
