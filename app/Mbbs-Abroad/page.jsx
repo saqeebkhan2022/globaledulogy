@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import Header from "../Medical/utils/Header";
 import SEO from "../components/SEO";
 
@@ -164,7 +165,6 @@ const Page = () => {
           <h2 className="text-2xl font-semibold mb-4">Overview</h2>
           {renderList(overview)}
         </section>
-        {/* Countries Grid */}
 
         {/* Countries Grid */}
         <section>
@@ -173,7 +173,6 @@ const Page = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {countries.map((c) => {
-              // Normalize country codes for flags (using flagcdn)
               const flagMap = {
                 Nepal: "np",
                 Bangladesh: "bd",
@@ -191,15 +190,15 @@ const Page = () => {
                 Belarus: "by",
                 Mauritius: "mu",
                 Lithuania: "lt",
-                Caribbean: "do", // default to Dominican Republic flag
+                Caribbean: "do", // using Dominican Republic flag
                 Latvia: "lv",
               };
-
-              const code = flagMap[c] || "un"; // fallback unknown flag
+              const code = flagMap[c] || "un";
 
               return (
-                <div
+                <Link
                   key={c}
+                  href={`/Mbbs-Abroad/${c}`}
                   className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl border border-gray-200 p-4 hover:shadow-lg transition-all duration-300"
                 >
                   <img
@@ -210,11 +209,12 @@ const Page = () => {
                   <span className="text-gray-800 font-medium text-center">
                     {c}
                   </span>
-                </div>
+                </Link>
               );
             })}
           </div>
         </section>
+
         {/* Services */}
         <section>
           <h2 className="text-2xl font-semibold mb-4">
@@ -222,6 +222,7 @@ const Page = () => {
           </h2>
           {renderTable(services, ["Service", "Details"])}
         </section>
+
         {/* Why Choose */}
         <section>
           <h2 className="text-2xl font-semibold mb-4">
@@ -229,11 +230,13 @@ const Page = () => {
           </h2>
           {renderList(benefits)}
         </section>
+
         {/* Admission Steps */}
         <section>
           <h2 className="text-2xl font-semibold mb-4">Admission Process</h2>
           {renderTable(admissionSteps, ["Step", "Details"])}
         </section>
+
         {/* Documents */}
         <section>
           <h2 className="text-2xl font-semibold mb-4">Documents Required</h2>
@@ -243,6 +246,7 @@ const Page = () => {
             provides a destination-wise checklist and formats.
           </p>
         </section>
+
         {/* CTA */}
         <section className="rounded-xl border border-gray-200 p-6 bg-white shadow-sm">
           <h2 className="text-2xl font-semibold mb-2">
